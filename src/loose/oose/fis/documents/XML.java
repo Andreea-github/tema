@@ -24,6 +24,7 @@ public class XML extends Document {
 
     @Override
     public String toString() {
-        return "XML " + super.toString();
+     String s="Modificare_XML (asa trebuie) ";
+        return s + super.toString();
     }
 }
