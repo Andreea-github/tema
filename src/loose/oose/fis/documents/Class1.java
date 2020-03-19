@@ -1,9 +1,10 @@
+
 package loose.oose.fis.documents;
 
 import java.util.Arrays;
 
-public class XML extends Document {
-    public XML(String[] continut) {
+public class Class1 extends Document {
+    public Class1(String[] continut) {
         super(continut);
     }
 
@@ -13,7 +14,7 @@ public class XML extends Document {
         int      pos = 0;
 
         for (String cuvant : continut) {
-            if (cuvant.charAt(0) != '<' || cuvant.charAt(cuvant.length() - 1) != '>') {
+            if (!cuvant.contains(":")) {
                 res[pos] = cuvant;
                 pos++;
             }
@@ -24,6 +25,6 @@ public class XML extends Document {
 
     @Override
     public String toString() {
-        return "XML " + super.toString();
+        return "Class1 " + super.toString();
     }
 }
